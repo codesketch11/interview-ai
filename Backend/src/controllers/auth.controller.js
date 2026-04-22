@@ -61,6 +61,7 @@ async function registerUserController(req, res){
  * @description login a user, expects email and password in the request body
  * @access Public
  */
+
 async function loginUserController(req, res) {
     
     const {email, password} = req.body;
@@ -124,6 +125,7 @@ async function logoutUserController(req, res) {
  * @description get the current logged in user details
  * @access Private
  */
+
 async function getMeController(req, res) {
     
     const user = await userModel.findById(req.user.id)
