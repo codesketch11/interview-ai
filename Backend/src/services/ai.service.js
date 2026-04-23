@@ -84,8 +84,8 @@ Job Description: ${jobDescription}
             temperature: 0.1,
         }
     })
-
-    console.log(response.text)
+   
+    return JSON.parse(response.text)
 }
 
 module.exports = generateInterviewReport
